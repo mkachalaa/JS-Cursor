@@ -25,16 +25,16 @@ const smallChange = 500;
 const сhange = (smallChange - allPrice);
 console.log(`Решта: ` + сhange);
 
-const roundPrice = ((allPrice) / 3).toFixed(2);
+const roundPrice = Number((allPrice) / 3).toFixed(2);
 console.log(`Cереднє значення цін: ` + roundPrice);
 
 const percent = Math.floor(Math.random() * 49) + 1;
 console.log(`Знижка: ` + percent);
 
-const priceToPay = (allPrice - (allPrice * percent / 100)).toFixed(2);
+const priceToPay = Number(allPrice - (allPrice * percent / 100)).toFixed(2);
 console.log(`Ціна зі знижкою: ` + priceToPay);
 
-const profit = (priceToPay / 2 - percent).toFixed(2);
+const profit = Number(priceToPay / 2 - percent).toFixed(2);
 console.log(`Чистий прибуток: ` + profit)
 
 document.write(`<i>Максимальне число: ${maxPrice}</i><br>`,
