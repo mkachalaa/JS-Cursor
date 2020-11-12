@@ -45,7 +45,7 @@ document.write(`<i>Максимальне число: ${maxPrice}</i><br>`,
     `<i>Cума всіх товарів округлена в меншу сторону є парною:  ${evenPrice}</i><br>`,
     `<i>Решта: ${сhange}</i><br>`,
     `<i>Cереднє значення цін:  ${roundPrice}</i><br>`,
-    `<strong>Знижка: ${percent}</strong><br>`,
+    `<strong>Знижка (в відсотках): ${percent}</strong><br>`,
     `<strong>Ціна зі знижкою: ${priceToPay}</strong><br>`,
     `<strong>Чистий прибуток: ${profit}</strong><br>`,
 
