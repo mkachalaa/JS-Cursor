@@ -22,8 +22,8 @@ console.log(`Cума всіх товарів округлена в меншу с
 
 const smallChange = 500;
 
-const сhange = (smallChange - allPrice);
-console.log(`Решта: ` + сhange);
+const сhangePrice = (smallChange - allPrice);
+console.log(`Решта: ` + сhangePrice);
 
 const roundPrice = Number((allPrice) / 3).toFixed(2);
 console.log(`Cереднє значення цін: ` + roundPrice);
