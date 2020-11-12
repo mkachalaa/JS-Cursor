@@ -33,11 +33,13 @@ const max = 49;
 const percent = Math.floor(Math.random() * (max - min + 1)) + min;
 console.log(`Знижка (в відсотках) : ` + percent);
 
-const priceToPay = Number((allPrice - (allPrice * percent / 100).toFixed(2);
+const priceToPay = Number(allPrice - (allPrice * percent / 100)).toFixed(2);
 console.log(`Ціна зі знижкою: ` + priceToPay);
 
 const profit = Number((allPrice / 2 - percent).toFixed(2));
 console.log(`Чистий прибуток: ` + profit)
+
+
 
 document.write(`<i>Максимальне число: ${maxPrice}</i><br>`,
     `<i>Мінімальне число:  ${minPrice}</i><br>`,
