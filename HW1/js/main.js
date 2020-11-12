@@ -31,19 +31,21 @@ console.log(`Cереднє значення цін: ` + roundPrice);
 const percent = Math.floor(Math.random() * 49) + 1;
 console.log(`Знижка (в відсотках) : ` + percent);
 
-const priceToPay = Number((allPrice - (allPrice * percent / 100)).toFixed(2));
+const priceToPay = Number(allPrice - (allPrice * percent / 100)).toFixed(2);
 console.log(`Ціна зі знижкою: ` + priceToPay);
 
 const profit = Number((allPrice / 2 - percent).toFixed(2));
 console.log(`Чистий прибуток: ` + profit)
 
-document.writeln(`<i>Максимальне число: ${maxPrice}</i><br>`,
+
+
+document.write(`<i>Максимальне число: ${maxPrice}</i><br>`,
     `<i>Мінімальне число:  ${minPrice}</i><br>`,
     `<i>Вартість всіх товарів: ${allPrice}</i><br>`,
     `<i>Вартість без копійок: ${totalPrice}</i><br>`,
     `<i>Cума товарів округленa: ${approxPrice}</i><br>`,
     `<i>Cума всіх товарів округлена в меншу сторону є парною:  ${evenPrice}</i><br>`,
-    `<i>Решта: ${сhange}</i><br>`,
+    `<i>Решта: ${сhangePrice}</i><br>`,
     `<i>Cереднє значення цін:  ${roundPrice}</i><br>`,
     `<strong>Знижка (в відсотках): ${percent}</strong><br>`,
     `<strong>Ціна зі знижкою: ${priceToPay}</strong><br>`,
