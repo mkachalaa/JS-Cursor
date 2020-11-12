@@ -37,7 +37,7 @@ console.log(`Ціна зі знижкою: ` + priceToPay);
 const profit = Number((allPrice / 2 - percent).toFixed(2));
 console.log(`Чистий прибуток: ` + profit)
 
-document.write(`<i>Максимальне число: ${maxPrice}</i><br>`,
+document.writeln(`<i>Максимальне число: ${maxPrice}</i><br>`,
     `<i>Мінімальне число:  ${minPrice}</i><br>`,
     `<i>Вартість всіх товарів: ${allPrice}</i><br>`,
     `<i>Вартість без копійок: ${totalPrice}</i><br>`,
