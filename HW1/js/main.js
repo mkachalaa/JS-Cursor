@@ -34,7 +34,10 @@ console.log(`Знижка (в відсотках)  : ` + percent);
 const priceToPay = Number(allPrice - (allPrice * percent / 100)).toFixed(2);
 console.log(`Ціна зі знижкою: ` + priceToPay);
 
-const profit = Number(priceToPay / 2 - percent).toFixed(2);
+const ownership = Number(allPrice / 2).toFixed(2);
+console.log(`Собівартість: ` + ownership)
+
+const profit = Number(ownership - percent).toFixed(2);
 console.log(`Чистий прибуток: ` + profit)
 
 document.write(`<i>Максимальне число: ${maxPrice}</i><br>`,
@@ -47,6 +50,7 @@ document.write(`<i>Максимальне число: ${maxPrice}</i><br>`,
     `<i>Cереднє значення цін:  ${roundPrice}</i><br>`,
     `<strong>Знижка (в відсотках): ${percent}</strong><br>`,
     `<strong>Ціна зі знижкою: ${priceToPay}</strong><br>`,
+    `<strong>Собівартість: ${ownership}</strong><br>`,
     `<strong>Чистий прибуток: ${profit}</strong><br>`,
 
 );
