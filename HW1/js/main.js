@@ -29,7 +29,7 @@ const roundPrice = Number((allPrice) / 3).toFixed(2);
 console.log(`Cереднє значення цін: ` + roundPrice);
 
 const percent = Math.floor(Math.random() * 49) + 1;
-console.log(`Знижка: ` + percent);
+console.log(`Знижка (в відсотках)  : ` + percent);
 
 const priceToPay = Number(allPrice - (allPrice * percent / 100)).toFixed(2);
 console.log(`Ціна зі знижкою: ` + priceToPay);
