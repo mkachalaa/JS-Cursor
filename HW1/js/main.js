@@ -34,7 +34,7 @@ console.log(`Знижка (в відсотках) : ` + percent);
 const priceToPay = Number(allPrice - (allPrice * percent / 100)).toFixed(2);
 console.log(`Ціна зі знижкою: ` + priceToPay);
 
-const profit = Number(priceToPay / 2 - percent).toFixed(2);
+const profit = Number(allPrice / 2 - percent).toFixed(2);
 console.log(`Чистий прибуток: ` + profit)
 
 document.write(`<i>Максимальне число: ${maxPrice}</i><br>`,
